@@ -1,0 +1,652 @@
+* {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  font-size: 1rem;
+}
+
+.bton {
+  display: flex;
+  justify-content: center;
+}
+.bton__ofertas {
+  background-color: red;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition-duration: 0.5s;
+}
+.bton__ofertas:hover {
+  color: black;
+  background-color: white;
+}
+.bton__correo {
+  background-color: rgba(0, 0, 0, 0.877);
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+.bton__producto {
+  background-color: red;
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  transition-duration: 0.5s;
+}
+.bton__producto:hover {
+  color: black;
+  background-color: white;
+  border: solid 1px black;
+}
+
+.correo {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.correo__destacado {
+  width: 200px;
+  background-color: gray;
+  border-radius: 10px;
+  border: 1px grey solid;
+  color: white;
+  padding-left: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .bton {
+    display: flex;
+    justify-content: center;
+  }
+  .bton__ofertas {
+    background-color: red;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    padding: 2px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+  }
+  .bton__ofertas:hover {
+    color: black;
+    background-color: white;
+  }
+  .bton__producto {
+    background-color: red;
+    text-align: center;
+    width: 110px;
+    height: 25px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+  }
+  .bton__producto:hover {
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+  }
+  .bton__correo {
+    background-color: black;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin-top: 15px;
+  }
+  .correo__destacado {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bton__ofertas {
+    background-color: red;
+    text-align: center;
+    width: 120px;
+    height: 35px;
+    padding: 2px;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+    transition-duration: 0.5s;
+  }
+  .bton__ofertas:hover {
+    color: black;
+    background-color: white;
+  }
+  .bton__producto {
+    background-color: red;
+    text-align: center;
+    width: 130px;
+    height: 25px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+  }
+  .bton__producto:hover {
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+  }
+  .correo__destacado {
+    width: 400px;
+  }
+}
+nav {
+  background-color: black;
+}
+
+header {
+  color: white;
+}
+
+.bi-list {
+  color: white;
+  border: solid 2px white;
+  font-size: 30px;
+}
+
+.logo {
+  font-size: 4rem;
+  font-family: "Shadows Into Light", cursive;
+  padding-top: 22px;
+  color: white;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.726);
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 180px;
+    height: 120px;
+  }
+  .menu__items {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .logo {
+    width: 440px;
+    height: 120px;
+  }
+  .bi-list {
+    color: black;
+    border: solid 1px black;
+    font-size: 35px;
+  }
+}
+footer {
+  text-align: center;
+  font-size: 0, 1rem;
+  margin-top: 50px;
+}
+
+.terminos {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+}
+.terminos__texto {
+  font-size: 1rem;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.bi-instagram {
+  font-size: 1.8rem;
+}
+
+.bi-facebook {
+  font-size: 1.8rem;
+}
+
+.bi-whatsapp {
+  font-size: 1.8rem;
+}
+
+.copyright {
+  text-align: start;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .iconos {
+    height: 80px;
+    justify-content: space-around;
+  }
+  .bi-instagram {
+    font-size: 2.5rem;
+  }
+  .bi-facebook {
+    font-size: 2.5rem;
+  }
+  .bi-whatsapp {
+    font-size: 2.5rem;
+  }
+  .copyright {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .terminos__texto {
+    font-size: 1.2rem;
+  }
+  .bi-instagram {
+    font-size: 3rem;
+  }
+  .bi-facebook {
+    font-size: 3rem;
+  }
+  .bi-whatsapp {
+    font-size: 3rem;
+  }
+}
+.formulario {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.formulario__cajas {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.452);
+  width: 350px;
+}
+
+label {
+  display: block;
+}
+
+.label__modificado {
+  display: inline;
+}
+
+iframe {
+  width: 220px;
+  height: 220px;
+}
+
+.titulo {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 2rem;
+  background-color: black;
+  padding: 10px;
+  margin: 0px;
+  font-family: "Shadows Into Light", cursive;
+}
+.titulo__visitanos {
+  color: black;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 0px;
+  padding: 10px;
+  font-weight: 200;
+  font-family: "Shadows Into Light", cursive;
+}
+.titulo__suscripcion {
+  color: white;
+  text-align: center;
+  background-color: black;
+  margin-bottom: 0px;
+  padding: 10px;
+  font-weight: 200;
+  font-family: "Shadows Into Light", cursive;
+}
+.titulo__modificado {
+  color: white;
+  text-align: start;
+  font-size: 1rem;
+  background-color: black;
+  padding: 20px;
+  font-weight: 200;
+}
+
+.ofertas {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.ofertas__precioN {
+  text-align: center;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.267);
+}
+.ofertas__precioO {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.ofertas__imagen {
+  width: 20vh;
+  height: 20vh;
+  margin: 20px;
+  transition-duration: 0.5s;
+}
+.ofertas__imagen:hover {
+  width: 24vh;
+  height: 24vh;
+}
+
+.ubicacion {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.ubicacion__direccion {
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ubicacion__texto {
+  font-size: 0.8rem;
+  padding: 6px;
+}
+
+.bi-geo-alt {
+  font-size: 40px;
+}
+
+@media screen and (min-width: 575px) {
+  .ofertas {
+    font-size: 1.3rem;
+  }
+  .ofertas__imagen {
+    width: 25vh;
+    height: 25vh;
+    margin: 20px;
+    transition-duration: 0.5s;
+  }
+  .ofertas__imagen:hover {
+    width: 28vh;
+    height: 28vh;
+  }
+  .titulo__visitanos {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 575px) and (min-width: 768px) {
+  iframe {
+    width: 280px;
+    height: 280px;
+  }
+  .ofertas {
+    font-size: 1.8rem;
+  }
+  .ofertas__imagen {
+    width: 35vh;
+    height: 35vh;
+    margin: 20px;
+    transition-duration: 0.5s;
+  }
+  .ofertas__imagen:hover {
+    width: 39vh;
+    height: 39vh;
+  }
+  .ubicacion {
+    justify-content: space-around;
+  }
+  .ubicacion__texto {
+    font-size: 1rem;
+  }
+  .titulo {
+    font-size: 3rem;
+  }
+  .titulo__visitanos {
+    font-size: 3rem;
+  }
+  .titulo__suscripcion {
+    font-size: 2.5rem;
+  }
+  .titulo__modificado {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bi-geo-alt {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 575px) and (min-width: 1024px) {
+  iframe {
+    width: 340px;
+    height: 340px;
+  }
+  .titulo {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    background-color: black;
+    padding: 10px;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .titulo__ubicacion {
+    font-size: 2.5rem;
+  }
+  .titulo__suscripcion {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: black;
+    padding-top: 30px;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .titulo__modificado {
+    color: whitesmoke;
+    text-align: start;
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 20px;
+    font-weight: 200;
+  }
+  .ofertas {
+    font-size: 2rem;
+  }
+  .ofertas__precioO {
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .ofertas__imagen {
+    width: 50vh;
+    height: 50vh;
+    margin: 20px;
+    transition-duration: 0.3s;
+  }
+  .ofertas__imagen:hover {
+    width: 44vh;
+    height: 44vh;
+  }
+  .ubicacion__texto {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+  .bi-geo-alt {
+    font-size: 40px;
+  }
+}
+.producto {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.3rem;
+}
+.producto__imagen {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 0px;
+  transition-duration: 0.5s;
+}
+.producto__imagen:hover {
+  width: 270px;
+  height: 270px;
+}
+.producto__iconos {
+  font-size: 1rem;
+}
+
+.talles {
+  width: 46vh;
+  height: 46vh;
+}
+
+@media screen and (min-width: 575px) {
+  .talles {
+    width: 70vh;
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .talles {
+    width: 90vh;
+    height: 90vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .talles {
+    width: 110vh;
+    height: 110vh;
+  }
+}
+.texto {
+  color: black;
+  font-weight: 300;
+  text-align: center;
+}
+.texto__pregunta {
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.bi-paypal {
+  display: inline-block;
+  font-size: 3rem;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.tarjeta__mastercard {
+  width: 80px;
+  height: 55px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.tarjeta__visa {
+  width: 80px;
+  height: 55px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 575px) {
+  .texto {
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .texto__pregunta {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .texto {
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .texto__pregunta {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .texto {
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .texto__pregunta {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+}
+.titulo__email {
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  margin-top: 30px;
+  font-family: "Shadows Into Light", cursive;
+}
+
+/*# sourceMappingURL=styles.css.map */
