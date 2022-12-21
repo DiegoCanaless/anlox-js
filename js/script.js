@@ -71,5 +71,38 @@ producto.asignacion(Camperas)
 
 }
 
+// Ordenamos los array segun sus precios
+
+let ordenados = prompt("Elegi la opcion que desees : \n1 - Precio(Mayor a Menor) \n2 - Precio(Menor a Mayor)");
+
+function ordenar(ordenados, array){
+    let arrayOrdenado = array.slice(0);
+
+    switch (ordenados){
+        case '1':
+            return arrayOrdenado.sort((a,b)=>b.precio-a.precio);
+        case '2':
+            return arrayOrdenado.sort((a,b)=>a.precio-b.precio);
+    default:
+        alert("Opcion Invalida");
+        break;
+    }
+}
+
+// Mostramos el array
+
+function StringOrdenado(array){
+    let datos='';
+
+array.forEach(elemento => {
+    datos+= 'Titulo: ' +elemento.nombre+'\nPrecio: '+ elemento.precio
+    
+})
 
 
+return datos;
+
+}
+
+
+alert(StringOrdenado(ordenar(ordenados, Camperas)));
