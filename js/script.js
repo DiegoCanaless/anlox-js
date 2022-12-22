@@ -1,39 +1,39 @@
                             // PREENTREGA N1
 
-//Inicializo la variable con la informacion del cliente
+//Inicializo la variable con la informacion del cliente (Comentario)
 
-// let numeroDePrendas = parseInt(prompt("Ingrese el numero de prendas que desea comprar"));
+let numeroDePrendas = parseInt(prompt("Ingrese el numero de prendas que desea comprar"));
 
-//Hago una condicion usando el numero de prendas que comprara el cliente y dandoles un descuento segun las unidades
+//Hago una condicion usando el numero de prendas que comprara el cliente y dandoles un descuento segun las unidades (Comentario)
 
-// if(numeroDePrendas<10) {
-//     alert("Bienvenida/o a nuestra pagina");
-// } else if(numeroDePrendas>=10 && numeroDePrendas<20){
-//     alert("Bienvenida/o tienes un descuento de 5% en tus compras");
-// } else if(numeroDePrendas>=20 && numeroDePrendas<30){
-//     alert("Bienvenida/o tienes un descuento de 10% en tus compras");
-// } else {
-//     alert("Bienvenida/o tienes un descuento del 25% en tus compras");
-// }
+if(numeroDePrendas<10) {
+    alert("Bienvenida/o a nuestra pagina");
+} else if(numeroDePrendas>=10 && numeroDePrendas<20){
+    alert("Bienvenida/o tienes un descuento de 5% en tus compras");
+} else if(numeroDePrendas>=20 && numeroDePrendas<30){
+    alert("Bienvenida/o tienes un descuento de 10% en tus compras");
+} else {
+    alert("Bienvenida/o tienes un descuento del 25% en tus compras");
+}
 
-// Creo con la funcion evaluarIva una calculadora de iva segun el precio del producto con un ciclo While
+// Creo con la funcion evaluarIva una calculadora de iva segun el precio del producto con un ciclo While (Comentario)
 
-// let precioProducto = parseInt(prompt("Ingrese el valor del producto para evaluar el iva"));
-// const iva = 0.21;
+let precioProducto = parseInt(prompt("Ingrese el valor del producto para evaluar el iva"));
+const iva = 0.21;
 
-// function evaluarIva(){
-//     while ( precioProducto != 0){
-//         let precioProductoConIva = precioProducto + precioProducto * iva;
-//         alert("El valor del producto con iva es de: " + precioProductoConIva + "$ , Coloque 0 acontinuacion si desea salir");
-//         precioProducto = parseInt(prompt("Ingrese el valor del producto para evaluar el iva"));
-//     }
-// }
+function evaluarIva(){
+    while ( precioProducto != 0){
+        let precioProductoConIva = precioProducto + precioProducto * iva;
+        alert("El valor del producto con iva es de: " + precioProductoConIva + "$ , Coloque 0 acontinuacion si desea salir");
+        precioProducto = parseInt(prompt("Ingrese el valor del producto para evaluar el iva"));
+    }
+}
 
-// evaluarIva()
+evaluarIva()
 
 
                                 // PREENTREGA N2
-// Esto es una simulacion de como el administrador ingresaria nuevas prendas al inventario
+// Esto es una simulacion de como el administrador ingresaria nuevas prendas al inventario (Comentario)
 
 class Inventario {
     constructor(nombre, precio, id){
@@ -64,14 +64,14 @@ while(seguir){
 
 let informacion = nuevaPrenda.split('-');
 
-const producto = new Inventario(informacion[0], informacion[1]);
+const producto = new Inventario(informacion[0], parseInt(informacion[1]));
 
 Camperas.push(producto);
 producto.asignacion(Camperas)
 
 }
 
-// Ordenamos los array segun sus precios
+// Ordenamos los array segun sus precios (Comentario)
 
 let ordenados = prompt("Elegi la opcion que desees : \n1 - Precio(Mayor a Menor) \n2 - Precio(Menor a Mayor)");
 
@@ -89,13 +89,13 @@ function ordenar(ordenados, array){
     }
 }
 
-// Mostramos el array
+// Mostramos el array (Comentario)
 
 function StringOrdenado(array){
     let datos='';
 
 array.forEach(elemento => {
-    datos+= 'Titulo: ' +elemento.nombre+'\nPrecio: '+ elemento.precio
+    datos+= 'Titulo: ' +elemento.nombre+'\nPrecio: '+ elemento.precio+'\n\n'
     
 })
 
