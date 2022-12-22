@@ -51,6 +51,18 @@ const Camperas= [
     new Inventario("Campera Quatum", 8000, 1),
     new Inventario("Campera Ashley", 12000, 2),
     new Inventario("Campera Rasmus", 8000, 3),
+    new Inventario("Campera Max", 5000, 4),
+    new Inventario("Campera Garbi", 6000, 5),
+    new Inventario("Campera Erin", 8000, 6),
+    new Inventario("Campera Ivor", 12000, 7),
+    new Inventario("Campera Vayne", 10000, 8),
+    new Inventario("Campera Moror", 14000, 9),
+    new Inventario("Campera Crizzy", 11000, 10),
+    new Inventario("Campera Brianna", 14000, 11),
+    new Inventario("Campera Rhoedia Neo", 9000, 12),
+    new Inventario("Campera Crom", 12000, 13),
+    new Inventario("Campera Blair", 12000, 14),
+
 ]
 
 let seguir = true;
