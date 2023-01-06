@@ -81,6 +81,16 @@ html {
   margin-bottom: 20px;
 }
 
+.carrito{
+  font-size: 1.5rem;
+  padding-top: 30px;
+  border-bottom: 1px black solid;
+}
+
+.bi-cart-check{
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .bton {
     display: flex;
