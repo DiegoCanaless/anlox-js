@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script def src="../js/script.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,900&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
@@ -66,7 +65,7 @@
         <section class="row">
             <article class="col">
                 <p class="titulo__email">ENVIANOS UN EMAIL</p>
-                <form action="" class="formulario">
+                <form action="" class="formulario" id="formulario">
                     <div>
                         <label for="Nombre"> Nombre: </label>
                         <input type="text" placeholder="Nombre" name="nombre" id="userName" class="formulario__cajas" required>
@@ -89,7 +88,7 @@
                             class="formulario__cajas" required></textarea>
                     </div>
                     <div class="bton">
-                        <button class="bton__correo">Enviar</button>
+                        <button type="submit" class="bton__correo">Enviar</button>
                     </div>
                 </form>
             </article>
@@ -102,6 +101,10 @@
             </article>
         </section>
     </main>
+
+        <section class="container">
+            <div class="respuesta"></div>
+        </section>
     <!-- Footer  -->
     <footer>
 
@@ -123,7 +126,7 @@
         </div>
         <p class="copyright"> <strong>©Copyright ANLOX </strong></p>
     </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
