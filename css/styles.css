@@ -245,6 +245,10 @@ footer {
   margin-top: 50px;
 }
 
+.tarjeta{
+  margin-bottom: 40px;
+}
+
 .terminos {
   display: flex;
   flex-flow: column wrap;
@@ -259,6 +263,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
+  margin-top: 150px;
 }
 
 .bi-instagram {
