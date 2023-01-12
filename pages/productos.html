@@ -46,8 +46,8 @@
                         <li class="nav-item p-lg-4">
                             <a class="nav-link" href="./contacto.html" class="menu__items">Contacto</a>
                         </li>
-                        <li class="nav-item p-lg-4 me-1">
-                            <a class="nav-link" href="./carrito.html" class="menu__items"><i class="bi bi-cart-check"></i></a>
+                        <li class="nav-item mt-4">
+                            <a class="nav-link text-white"data-bs-toggle="modal"data-bs-target="#modal"><i class="bi bi-cart mx-5" id="carritoContenedor">0</i></a>
                         </li>
                     </ul>
                 </div>
@@ -59,132 +59,26 @@
     <main>
         <h1 class="titulo"> PRODUCTOS </h1>
         <section class="container">
-            <div class="row pt-4 text-center mb-0 tarjeta">
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href=""><img src="../assets/foto-productos/campera__de__hombre__quantum.jpg"
-                            alt="Campera Quantum Azul y Naranja" class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Quantum<br>$8.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
+            <div class="container-xl">
+                <div class="modal" tabindex="-1" role="dialog" id="modal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Carrito</h5>
+                                <button type="button"class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer d-flex justify-content-around">
+                                <button type="button" id="procesarCompra" class="btn btn-primary">Comprar</button>
+                                <span class="text-center" id="precioTotal">Precio Total:</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__mujer__ashley.jpg" alt="Campera Ashley Violeta"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Ashley<br>$12.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__hombre__rasmus.jpg" alt="Campera Rasmus Bordo"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Rasmus<br>$8.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__hombre__max.jpg" alt="Campera Max Gris"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Max<br>$5.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="co-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__mujer__garbi__con__polar.jpg"
-                            alt="Campera Garbi Negra" class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Garbi<br>$6.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__desmontable__de__mujer__erin.jpg"
-                            alt="Campera Erin Fucsia" class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Erin<br>$8.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__hombre__ivor.jpg" alt="Campera Ivor Azul"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Ivor<br>$12.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__mujer__vayne.jpg" alt="Campera Vayne Negra y Naranja"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Vayne<br>$10.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__hombre__moror.jpg" alt="Campera Moror Azul y Blanca"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Moror<br>$14.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__mujer__crizzy.jpg" alt="Campera Crizzy Rosada"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Crizzy<br>$11.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__mujer__briana.jpg" alt="Campera Brianna Blanca"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Brianna<br>$14.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__mujer__rhodia__neo.jpg"
-                            alt="Campera Rhoedia Neo Blanca" class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Rhoedia Neo<br>$9.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__hombre__crom.jpg" alt="Campera Crom Azul"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Crom<br>$12.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 tarjeta">
-                    <a href=""><img src="../assets/foto-productos/campera__de__mujer__blair.jpg" alt="Campera Blair"
-                            class="shadow p-3 mb-3 bg-body rounded producto__imagen"></a>
-                    <p class="producto">Campera Blair<br>$12.000</p>
-                    <div class="bton">
-                        <button class="bton__producto" id="btonComprar">Comprar</button>
-                    </div>
-                </div>
+            </div>
+            <div class="row pt-4 text-center mb-0" id="contenedor" >
             </div>
         </section>
 
