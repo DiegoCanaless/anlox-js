@@ -104,7 +104,7 @@ const contenedor = document.getElementById("contenedor")
 const carritoContenedor = document.getElementById("carritoContenedor")
 const precioCarrito = document.querySelector("precioTotal")
 const botonesAlert = document.getElementsByClassName("bton__producto")
-
+const btonComprar = document.getElementById("procesarCompra")
 
 document.addEventListener("DOMContentLoaded", () => {
     carrito = JSON.parse(localStorage.getItem("carrito")) || []
@@ -141,10 +141,6 @@ const mostrarCarrito = () => {
 
     carritoContenedor.textContent = carrito.length
 
-
-    // No funciona
-   //  precioCarrito.textContent = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0) 
-
     guardarLocalStorage()
 }
 
@@ -170,15 +166,20 @@ function agregarProducto(id){
             if(prod.id === id){
                 prod.cantidad++
 
-                // No funciona
-               //  prod.precio ++
             }
             
         })
     } else {
         const producto =  stock.find((prod) => prod.id === id)
         carrito.push(producto)
-        alert("Se ha agregado al carrito")
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Se ha agregado al carrito',
+            showConfirmButton: false,
+            timer: 1500,
+            width: 300,
+        })
     }
 
     mostrarCarrito()
@@ -196,4 +197,23 @@ function guardarLocalStorage(){
     localStorage.setItem("carrito", JSON.stringify(carrito))
 }
 
+btonComprar.addEventListener("click", ( ) =>{
+    if(carrito.length !== 0) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Excelente',
+            text: 'Se ha realizado la compra exitosamente!',
+        })
+    }else {
+        Swal.fire({
+            icon: 'error',
+            text: 'No hay productos en el carrito!',
+        })
+}}
+)
 
+// Entrega final
+
+fetch('./local.json')
+    .then((response) => response.json())
+    .then(data => console.log(data))

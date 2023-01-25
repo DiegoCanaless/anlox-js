@@ -22,7 +22,7 @@ const divRespuesta = form.addEventListener("submit",
 
         respuesta.innerHTML=`
         <div class="alert alert-light " role="alert"  > 
-                !!!!   Se ha enviado el mensaje correctamente   !!!!
+            <p class="alertaCorreo" >¡¡¡¡   Se ha enviado el mensaje correctamente   !!!!</p>
         </div> `
 
             let usuarios= [{nombre: nombreUsuario.value, apellido: apellidoUsuario.value, correo: correoUsuario.value
@@ -32,6 +32,10 @@ const divRespuesta = form.addEventListener("submit",
             localStorage.setItem("usuarioStorage", JSON.stringify(usuarios))
         }
         
+        Swal.fire({
+            title: 'Correo enviado',
+            text: '¡¡ Pronto nos contactaremos con usted !!',
+        })
     }
     )
 

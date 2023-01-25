@@ -16,13 +16,17 @@ correo.addEventListener("input", function(){
 const envioCorreo = formPublicidad.addEventListener("submit",
     function (e) {
         e.preventDefault();
+        Swal.fire({
+            title: 'Correo enviado',
+            text: '¡¡ Gracias por suscribirte !!',
+        })
 
         cartel.innerHTML=` 
-        <div class="alert alert-success d-flex align-items-center mt-4 alerta" role="alert">
-            <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div class="alert justify-content-center align-items-center alert-success d-flex  mt-4 alerta" role="alert">
             <div>
                 !!!   Gracias por Suscribirte !!!
             </div>
         </div>
         `
     })
+    
