@@ -2,7 +2,7 @@
     {
         "id" : 1,
         "nombre" : "Campera Quantum",
-        "precio" : "8000",
+        "precio" : 8000,
         "img" : "../assets/foto-productos/quantum.jpg",
         "cantidad": 1
     },
